@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./src/css/style.css">
+    </head>
+    
+    <body>
+        <h1 id="test">Random Password generator</h1>
+        <p>Click the button to generate a random password.</p>
+        <p>Length of password:</p>
+        <div>
+        <input type="number" id="length">
+        </div>
+        <div>
+        <input type="checkbox" id="numbers"> Include Numbers
+        <input type="checkbox" id="symbols"> Include Symbols
+        </div>
+        <div>
+        <button id="generate" onclick="generatePassword()">Generate Password</button>
+        </div>
+        <div>
+        <p id="password1" placeholder="Generated Password" onclick="navigator.clipboard.writeText(this.innerText); alert('Password copied to clipboard!')">Generated Password</p>
+        <p id="password2" placeholder="Generated Password" onclick="navigator.clipboard.writeText(this.innerText); alert('Password copied to clipboard!')">Generated Password</p>
+        </div>
+    </body>
+    <script src="./src/js/main.js"></script>
+</html>
